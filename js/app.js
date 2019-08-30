@@ -10,6 +10,7 @@ for (let i=0; i < GRID_SIZE; i++) {
     </div>`;
   }
 }
+
 const nodes = document.querySelectorAll('.node');
 renderGrid(nodes, 10, 0);
 
@@ -19,7 +20,6 @@ nodes.forEach(node => {
     //Get row and column numbers of targeted node
     const targetNodeRow = parseInt(event.target.getAttribute('row'));
     const targetNodeColumn = parseInt(event.target.getAttribute('column'));
-
     //Render each node based on reference
     renderGrid(nodes, targetNodeRow, targetNodeColumn);
   });
@@ -73,4 +73,3 @@ function renderNode(node, modifier) {
     }
   }
 }
-

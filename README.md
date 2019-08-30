@@ -1,1 +1,0 @@
-# swissted-poster
