@@ -8,7 +8,7 @@ h1 {
   font-weight: 600;
   font-size: 5rem;
   letter-spacing: -1.5px;
-  margin: 15px 20px;
+  margin: 15px 20px 60px;
 }
 
 p {
@@ -40,17 +40,18 @@ p {
   grid-template-rows: repeat(11, 1fr);
 }
 
-.circle-container {
+.node {
   position: relative;
 }
 
-.circle-container div {
+.node div {
   position: absolute;
   border-radius: 50px 50px;
   mix-blend-mode: multiply;
   width: 100%;
   transform-origin: center;
   opacity: 1;
+  transition: all 0.2s;
 }
 
 .blue-circle {
@@ -65,14 +66,10 @@ p {
   background: #D9B83E;
 }
 
-
 #poster-text {
-  margin-top: 60px;
+  margin-bottom: 40px;
   margin-left: 20px;
   display: grid;
   grid-template-columns: 0.8fr 1.5fr 1fr;
   grid-gap: 24px;
 }
-
-
-
